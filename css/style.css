@@ -1,3 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
 @font-face {
   font-family: 'OpenSans-Bold';
   font-style: normal;
@@ -11,193 +19,251 @@
     url('../fonts/OpenSans-Regular.woff2') format('woff2');
 }
 
+.flex-container {
+  /*width: 1200px;*/
+  /*max-width: 1600px;*/
+  /*min-width: 641px;*/
+  font-size: 16px;
 
-h2 {
-  font-family: 'OpenSans-Bold';
-  font-weight: bold;
-  color: #000;
-  font-size: 1.2vw;
-  margin-top: 0.01vw;
-  margin-bottom: 35px;
+}
+
+
+
+/*div {
+  border: 2px solid #7f00ff;
+}*/
+
+.heider {
+
+  display: flex;
+  flex-direction: column;
+  background-color: #0a0c18;
+  background-image: url("../images/desktop/header-banner-desktop.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  align-items: center;
+  background-size: 100%;
+  width: 100%;
+  height: 27vw;
+}
+
+
+.heiders {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80vw;
+  height: 5.42vw;
+}
+
+
+.logo {
+  display: flex;
+  background-image: url("../images/desktop/noemi-logo.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  justify-content: flex-end;
+  width: 20%;
+  height: 40px;
+  
+  /*margin-left: 150px*/;
+}
+
+.main-menu {
+  display: flex;
+  justify-content: flex-start;
+  width: 40%;
+
+}
+
+.main-menu-link {
+  font-style: normal;
+  display: flex; 
+  justify-content: flex-start;
+  width: 90%;
+  
   
 }
 
-h3 {
-  font-family: 'OpenSans-Bold';
-  font-weight: bold;
-  color: #000;
-  font-size: 14px;
-  margin-top: 3px;
-  margin-bottom: 15px;
-}
-
-
-
-time {
-  font-family: 'OpenSans-Regular';
-  font-style: normal;
-  font-weight: lighter;
-  color: #cccccc;
-  font-size: 0.72vw;
-}
-
-
-
-p {
-  font-family: 'OpenSans-Regular';
-  font-size: 0.9vw;
-  margin-top: 56px;
-  /*Letter-spacing: 1.5px;*/
-
-}
-
-
-.main-sections-content {
+.menu-link {
   display: flex;
-  width: 1200px;
-  /*align-items: center;
+  font-family: OpenSans-Regular; /*данный шрифт не устонавливается*/
+  font-size: 0.78vw;
+  color: #fff;
+  margin-right: 2.11vw; 
+}
+  
+
+
+.title {
+  /*border: 1px solid #7f00ff;*/
+  display: flex;
+  font-family: OpenSans-Bold;
+  font-size: 2.5vw;
+  line-height: 1.5;
   justify-content: center;
-  text-align: center;*/
+  color: #fff;
+  text-align: center;
+  width: 39vw;
+  margin-top: 6.5vw;
+  margin-bottom: 8.5vw;
+}
+
+
+
+.trend {
+ /* border: 1px solid #7f00ff;*/
+  display: flex;
+  flex-direction: column;
+  font-family: OpenSans-Bold;
+  font-size: 1.4vw;
+  align-items: center;
+  justify-content: center;
+  height: 7.23vw;
+  width: 100%;
+  margin-top: 1.7vw;
+  
+}
+
+.shape {
+  display: flex;
+  justify-content: center;
+  padding-top: 0.18vw; 
+  width: 3.98vw;
+}
+
+
+.trend-selection {
+  display: flex;
+  justify-content: center;
+  height: 19.28vw;
+  width: 100%;
   margin: auto;
-
+  
 }
 
 
-.content {
+.trend-sections {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
   display: flex;
-  flex-direction: column; 
-  width: 915px;	
+  align-items: flex-end;
+  justify-content: center;
+  width: 25vw;
 }
 
-.sunrise {
+
+
+.trend-sections:nth-child(-n+3) {
+  margin-right: 0.24vw;
+}
+
+
+.frame {
   display: flex;
-  flex-direction: row;
-  /*border: 1px solid #7f00ff;*/
-
+  flex-direction: column;
+  border: 0.18vw solid #8f835c;
+  margin-bottom: 0.9vw;
+  font-family: OpenSans-Bold;
+  color: #b59f5b;
+  margin-right: 1.45vw;
+  margin-left: 1.45vw;
 }
 
-
-.big-photo {
-  width: 380px;
-  margin-left: 15px;
-  margin-bottom: 60px;
-  /*border: 1px solid #7f00ff;*/
-}
-
-
-.yoga {
+.sections-header-frame {
   display: flex;
-  flex-direction: row;
-  /*border: 1px solid #7f00ff;*/	
+  width: 70%;
+  margin-left: 2.05vw;
+  margin-top: 2.41vw; 
+}
+
+.sections-header:nth-child(1) {
+  margin-right: 0.9vw; 
 }
 
 
-.festival {
+.sections-header {
+  font-size: 0.84vw;
+  color: #b59f5b;
+}
+
+.sections-article {
   display: flex;
-  flex-direction: row;
-  /*border: 1px solid #7f00ff;*/	
+  margin-top: 0.9vw;
+  margin-right: 2.05vw;
+  margin-bottom: 2.23vw;
+  margin-left: 2.05vw;
+  font-size: 1.2vw;
+  color: #ffffff;
+}
+
+.garden {
+  background-color: #666666;
+  background-image: url("../images/desktop/garden-desktop.png")
+ 
 }
 
 
 .food {
+  background-color: #666666;
+  background-image: url("../images/desktop/cheese-desktop.png")
+}
+
+.travel {
+  background-color: #666666;
+  background-image: url("../images/desktop/hike-desktop.png")
+}
+
+.health {
+  background-color: #666666;
+  background-image: url("../images/desktop/vitamin-desktop.png")
+}
+
+
+
+.titlpost {
   display: flex;
-  flex-direction: row;
-  /*border: 1px solid #7f00ff;*/	
+  height: 64px;
 }
 
-
-.prints {
+.posts {
   display: flex;
-  flex-direction: row;
-  /*border: 1px solid #7f00ff;*/	
+  height: 1714px;
 }
 
-
-.description {
+.otstup3 {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-left: 30px;
-  width: 370px;
-  /*border: 1px solid #7f00ff;*/
+  height: 124px;
 }
 
-
-.section-topic {
-  font-family: 'OpenSans-Bold';
-  font-weight: bold;
-  color: #b59f5b;
-  font-size: 0.84vw;
-  margin-top: 0.12vw;
-  margin-right: 10px;
-  margin-bottom: 0.9vw;
-} 
-
-
-.section {
-  margin-right: 18px;
-}
- 
-
-/*.topic-content {
+.art {
   display: flex;
-  align-items: flex-start;	
-}*/
+  height: 439px;
+}
 
-
-.author-and-time {
+.otstup4 {
   display: flex;
-  flex-direction: row;
-  align-items: baseline;	
+  height: 65px;
 }
 
 
-.autor {
-  font-family: 'OpenSans-Bold';
-  font-size: 0.72vw;
-  margin-left: 0.84vw;	
+.futer {
+  display: flex;
+  height: 213px;
+
 }
 
 
-.additionally {
-  width: 286px;
-}
+/* Ниже вставка с style5.css*/
 
 
-.additionally-post {
-  display: flex; 
-  flex-direction: row;
-}
 
-.additionally-description {
-  display: flex; 
-  flex-direction: column;
-  align-items: flex-start;
-  margin-left: 20px;
-  margin-top: 10px;
-}
+/* Ниже вставка с style5.css*/
 
-.additionally-photo {
-  margin-bottom: 24px;
-}
-
-.shapes {
-  margin: auto;
-}
-
+/*напоминалка про hr*/
 hr {
   width: 66px; 
   border: 1px solid #b59f5b;
-  margin-top: 5px;
   /*color: #b59f5b;*/ 
-}
-
-.grouping {
-  width: 286px;
-  margin: auto;
-}
-
-.groupings {
-  width: 286px;
-  margin: auto;
 }
