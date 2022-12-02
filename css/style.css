@@ -38,7 +38,7 @@
   display: flex;
   flex-direction: column;
   background-color: #0a0c18;
-  background-image: url("https://rufly.github.io/mq-diplom/images/desktop/header-banner-desktop.png");
+  background-image: url("../images/desktop/header-banner-desktop.png");
   background-repeat: no-repeat;
   background-position: center;
   align-items: center;
@@ -61,7 +61,7 @@
 
 .logo {
   display: flex;
-  background-image: url("https://rufly.github.io/mq-diplom/images/desktop/noemi-logo.svg");
+  background-image: url("../images/desktop/noemi-logo.svg");
   background-repeat: no-repeat;
   background-position: right;
   justify-content: flex-end;
@@ -205,24 +205,24 @@
 
 .garden {
   background-color: #666666;
-  background-image: url("https://rufly.github.io/mq-diplom/images/desktop/garden-desktop.png")
+  background-image: url("../images/desktop/garden-desktop.png")
  
 }
 
 
 .food {
   background-color: #666666;
-  background-image: url("https://rufly.github.io/mq-diplom/images/desktop/cheese-desktop.png")
+  background-image: url("../images/desktop/cheese-desktop.png")
 }
 
 .travel {
   background-color: #666666;
-  background-image: url("https://rufly.github.io/mq-diplom/images/desktop/hike-desktop.png")
+  background-image: url("../images/desktop/hike-desktop.png")
 }
 
 .health {
   background-color: #666666;
-  background-image: url("https://rufly.github.io/mq-diplom/images/desktop/vitamin-desktop.png")
+  background-image: url("../desktop/vitamin-desktop.png")
 }
 
 
