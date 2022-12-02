@@ -46,6 +46,7 @@
  /* width: 100%;*/
   /*height: 27vw;*/
   height: calc(392px + 58 * (100vw / 1660));
+  max-height: 448px;
   /*height: 450px;*/
 }
 
