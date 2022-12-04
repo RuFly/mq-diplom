@@ -177,7 +177,7 @@ body {
 @media screen and (min-width: 641px) and (max-width: 1199px) {
 	.page-header {
 		padding: 40px 0 125px;
-		background-image: url("../images/desktop/header-banner-tablet.png");
+		background-image: url("../images/tablet/header-banner-tablet.png");
 	}
 	.container {
 		width: 91%;
@@ -203,7 +203,7 @@ body {
 	.page-header {
 		min-height: 640px;
 		padding: 30px 0 220px;
-		background-image: url("../images/desktop/header-banner-mobile.png");
+		background-image: url("../images/mobile/header-banner-mobile.png");
 	}
 	.container {
 		width: 91%;
