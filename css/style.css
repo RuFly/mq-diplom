@@ -715,8 +715,12 @@ body {
 	border: none;
 	background: #b59f5b url("../svg/search.svg") no-repeat center;
 	background-size: 18px;
-	
+	border-top: 1px solid #e1d9bd;
 }
+
+.button-search:hover {
+	border-top: 1px solid #b0a78c;
+} 
 
 
 /* !стили для формы подписки */
@@ -750,10 +754,7 @@ body {
 	color: #ffffff;
 	font-weight: bold;
 	text-transform: uppercase;
-	border-top: 1px solid #e1d9bd;
-	border-right: 1px solid #b59f5b;
-	border-bottom: 1px solid #b59f5b;
-	border-left: 1px solid #b59f5b; 
+	border-top: 1px solid #e1d9bd; 
 }
 
 .button-mailing:hover {
@@ -1004,11 +1005,7 @@ body {
 	color: white;
 	text-transform: uppercase;
 	background-color: #b59f5b;
-	
-	border-top: 1px solid #e1d9bd;
-	border-right: 1px solid #b59f5b;
-	border-bottom: 1px solid #b59f5b;
-	border-left: 1px solid #b59f5b;  
+	border-top: 1px solid #e1d9bd; 
 }
 
 .btn-link:hover {
