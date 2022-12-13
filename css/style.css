@@ -11,6 +11,10 @@ a {
 	text-decoration: none;  
 }
 /* общие стили */
+
+
+
+
 .visually-hidden {
 	width: 1px;
 	height: 1px;
@@ -38,7 +42,7 @@ a {
 }
 body {
 	font-family: "Open Sans", "Arial", sans-serif;
-	background-color: #ffffff;
+	background-color: #f4f7f6;
 }
 
 /* !стили для header */
@@ -100,6 +104,11 @@ body {
 	font-weight: normal;
 	text-transform: uppercase;
 	color: #ffffff;
+}
+
+.item-link:hover {
+	outline: none;	
+	text-decoration: underline;
 }
 
 
@@ -233,6 +242,7 @@ body {
 
 /* !стили для pop-up */
 .pop-up {
+	display: flex; 
 	position: fixed;
 	top: 0;
 	right: 0;
@@ -240,11 +250,16 @@ body {
 	left: 0;
 	background-color:rgba(0, 0, 0, 0.7);
 	z-index: 9999;
-
-	display: flex;
 	justify-content: center;
 	align-items: center;
 }
+
+/* !вкл-выкл pop-up*/
+.pop-up {
+	display: none;
+}
+
+
 .pop-up-container {
 	position: relative; /*для крестика*/
 	width: 30%;
@@ -444,6 +459,13 @@ body {
 	color: #b59f5b;
 	font-weight: bold;
 	text-transform: uppercase;
+	opacity: .7;
+}
+
+.tags-item-link:hover {
+    font-size: 14px;
+	text-decoration: underline;
+	opacity: 1;
 }
 
 
@@ -455,6 +477,11 @@ body {
 	color: #ffffff;
 	font-weight: bold;
 	text-transform: uppercase;
+	opacity: .8;
+}
+
+.trends-title-link:hover {
+	opacity: 1;
 }
 
 
@@ -509,7 +536,7 @@ body {
 	.trends-item-wrp {
 		width: 100%;
 		margin-right: 0;
-		margin-bottom: 2px;
+		margin-bottom: 3px;
 	}
 }
 
@@ -522,7 +549,7 @@ body {
 		width: calc(50% - 4px);
 	}
 	.trends-item-wrp:nth-child(odd) {
-		margin-right: 2px;
+		margin-right: 3px;
 	}
 }
 
@@ -574,8 +601,13 @@ body {
 	color: #0f0d0e;
 	font-weight: bold;
 	text-transform: uppercase;
+	opacity: .7;
 }
 
+
+.article-main-title-link:hover {
+    opacity: 1;
+}
 
 .date-and-autor {
 	margin-bottom: 35px;
@@ -654,9 +686,12 @@ body {
 .form-search {
 	display: flex;
 }
+
+
 .input-search-lable {
 	flex-grow: 1;
 }
+
 .input-search {
 	display: block;
 	width: 100%;
@@ -665,6 +700,12 @@ body {
 	padding-right: 16px;
 	border: none;
 	background-color: #f4f7f6;
+	border: 1px solid #f4f7f6;
+}
+
+.input-search:hover,
+.input-search:focus {
+    outline: 1px solid #b59f5b;
 }
 
 
@@ -674,6 +715,7 @@ body {
 	border: none;
 	background: #b59f5b url("../svg/search.svg") no-repeat center;
 	background-size: 18px;
+	
 }
 
 
@@ -690,8 +732,12 @@ body {
 	margin-bottom: 20px;
 	border: none;
 	background-color: #f4f7f6;
-	-webkit-appearance: none;
-	-moz-appearance: none;
+
+}
+
+.input-mailing:hover,
+.input-mailing:focus {
+    outline: 1px solid #b59f5b;
 }
 
 
@@ -704,6 +750,14 @@ body {
 	color: #ffffff;
 	font-weight: bold;
 	text-transform: uppercase;
+	border-top: 1px solid #e1d9bd;
+	border-right: 1px solid #b59f5b;
+	border-bottom: 1px solid #b59f5b;
+	border-left: 1px solid #b59f5b; 
+}
+
+.button-mailing:hover {
+	border-top: 1px solid #b0a78c;
 }
 
 
@@ -722,11 +776,12 @@ body {
 .tags-list-container .tags-item-link {
 	display: block;
 	padding: 3px 11px;
-	border: 4px solid #eeeded;
+	/*border: 4px solid #eeeded;*/
 	font-size: 12px;
 	color: #0f0d0e;
 	font-weight: bold;
 	text-transform: uppercase;
+	text-decoration: none;
 }
 
 
@@ -746,7 +801,13 @@ body {
 	font-size: 14px;
 	color: #000000;
 	font-weight: bold;
+	opacity: .7;
 }
+
+.topics-item-link:hover {
+	opacity: 1;
+}
+
 
 
 .superscript {
@@ -833,10 +894,19 @@ body {
 	}
 	.article-main-title {
 		margin-bottom: 12px;
+		
 	}
+    
+
 	.article-main-title-link {
 		font-size: 16px;
+		opacity: .7;
 	}
+    
+    .article-main-title-link:hover {
+		opacity: 1;
+	}
+
 	.date-and-autor {
 		margin-bottom: 25px;
 	}
@@ -891,9 +961,20 @@ body {
 	line-height: 1.46;
 	color: #0f0d0e;
 	font-weight: normal;
+	opacity: .7;
 }
+
+.product-info:hover {
+	opacity: 1;
+} 
+
 .product-info-link {
 	color: #b59f5b;
+}
+
+
+.product-info-link:hover {
+    text-decoration: underline; 
 }
 
 
@@ -923,8 +1004,16 @@ body {
 	color: white;
 	text-transform: uppercase;
 	background-color: #b59f5b;
+	
+	border-top: 1px solid #e1d9bd;
+	border-right: 1px solid #b59f5b;
+	border-bottom: 1px solid #b59f5b;
+	border-left: 1px solid #b59f5b;  
 }
 
+.btn-link:hover {
+	border-top: 1px solid #b0a78c;
+}
 
 @media screen and (min-width: 1200px) {
 	.product-img-wrp {
