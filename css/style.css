@@ -709,6 +709,7 @@ body {
 
 .input-search:focus {
     outline: 1px solid #b59f5b;
+    border: 1px solid #f4f7f6;
 }
 
 
@@ -748,6 +749,7 @@ body {
 
 .input-mailing:focus {
     outline: 1px solid #b59f5b;
+    border: 1px solid #f4f7f6;
 }
 
 
